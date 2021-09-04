@@ -3,12 +3,12 @@ package br.com.fiap.model;
 import java.time.LocalDate;
 
 public class Usuario {
-	private int id;
-	private String nome;
-	private LocalDate dataDeNascimento;
-	private String genero;
-	private String email;
-	private String senha;
+	protected int id;
+	protected String nome;
+	protected LocalDate dataDeNascimento;
+	protected String genero;
+	protected String email;
+	protected String senha;
 	
 	public int getId() {
 		return id;
@@ -26,6 +26,7 @@ public class Usuario {
 		return dataDeNascimento;
 	}
 	public void setDataDeNascimento(LocalDate dataDeNascimento) {
+		
 		this.dataDeNascimento = dataDeNascimento;
 	}
 	public String getGenero() {
