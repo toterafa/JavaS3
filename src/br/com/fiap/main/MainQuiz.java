@@ -2,6 +2,7 @@ package br.com.fiap.main;
 
 import java.time.LocalDate;
 import br.com.fiap.model.Quiz;
+import br.com.fiap.model.Usuario;
 
 public class MainQuiz {
 
@@ -15,12 +16,13 @@ public class MainQuiz {
 		q1.setResultado(3);
 		q1.setData(LocalDate.of(2021, 05, 23));
 		
-		q1.setNome("Andrézão da Massa");
-		q1.setId(123456);
-		q1.setDataDeNascimento(LocalDate.of(2000, 12, 25));
-		q1.setGenero("Masculino");
-		q1.setEmail("andré@andré");
-		q1.setSenha("123");
+		Usuario u2 = new Usuario();
+		u2.setNome("Andrézão da Massa");
+		u2.setId(123456);
+		u2.setDataDeNascimento(LocalDate.of(2000, 12, 25));
+		u2.setGenero("Masculino");
+		u2.setEmail("andré@andré");
+		u2.setSenha("123");
 		
 		System.out.println(q1.getId());
 		System.out.println(q1.getPergunta());
@@ -28,12 +30,12 @@ public class MainQuiz {
 		System.out.println("Seu nível de ansiedade" + q1.getResultado());
 		System.out.println(q1.getData());
 		
-		System.out.println(q1.getId());
-		System.out.println(q1.getNome());
-		System.out.println(q1.getDataDeNascimento());
-		System.out.println(q1.getGenero());
-		System.out.println(q1.getEmail());
-		System.out.println(q1.getSenha());
+		System.out.println(u2.getId());
+		System.out.println(u2.getNome());
+		System.out.println(u2.getDataDeNascimento());
+		System.out.println(u2.getGenero());
+		System.out.println(u2.getEmail());
+		System.out.println(u2.getSenha());
 
 	}
 

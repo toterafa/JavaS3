@@ -3,12 +3,12 @@ package br.com.fiap.model;
 import java.time.LocalDate;
 
 public class Usuario {
-	protected int id;
-	protected String nome;
-	protected LocalDate dataDeNascimento;
-	protected String genero;
-	protected String email;
-	protected String senha;
+	private int id;
+	private String nome;
+	private LocalDate dataDeNascimento;
+	private String genero;
+	private String email;
+	private String senha;
 	
 	public int getId() {
 		return id;

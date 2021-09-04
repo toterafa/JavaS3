@@ -2,13 +2,13 @@ package br.com.fiap.model;
 
 import java.time.LocalDate;
 
-public class Quiz extends Usuario{
+public class Quiz {
 	
-	protected int id;
-	protected String pergunta;
-	protected String alternativa;
-	protected int resultado;
-	protected LocalDate data;
+	private int id;
+	private String pergunta;
+	private String alternativa;
+	private int resultado;
+	private LocalDate data;
 	
 	public int getId() {
 		return id;
