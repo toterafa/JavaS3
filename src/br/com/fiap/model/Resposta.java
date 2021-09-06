@@ -15,18 +15,23 @@ public class Resposta {
     public void selecionaResposta(int opcao){
         switch (opcao){
             case 1:
+                setOpcao(opcao);
                 // Caso o usuário escolha a opção, ela será salva no banco de dados, relacionada a pergunta atual
                 break;
             case 2:
+                setOpcao(opcao);
                 // Caso o usuário escolha a opção, ela será salva no banco de dados, relacionada a pergunta atual
                 break;
             case 3:
+                setOpcao(opcao);
                 // Caso o usuário escolha a opção, ela será salva no banco de dados, relacionada a pergunta atual
                 break;
             case 4:
+                setOpcao(opcao);
                 // Caso o usuário escolha a opção, ela será salva no banco de dados, relacionada a pergunta atual
                 break;
             case 5:
+                setOpcao(opcao);
                 // Caso o usuário escolha a opção, ela será salva no banco de dados, relacionada a pergunta atual
                 break;
             default:

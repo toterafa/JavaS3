@@ -12,7 +12,7 @@ public class MainUsuario {
 		Usuario u1 = new Usuario();
 		u1.setNome("Andrézão da Massa");
 		u1.setId(123456);
-		u1.setDataDeNascimento(LocalDate.of(2000, 12, 25));
+		u1.setDataDeNascimento(LocalDate.of(2000, 10, 01));
 		u1.setGenero("Masculino");
 		u1.setEmail("andré@andré");
 		u1.setSenha("123");
