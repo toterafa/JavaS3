@@ -5,41 +5,43 @@ import java.time.LocalDate;
 public class Quiz {
 	
 	private int id;
-	private String pergunta;
+	private Pergunta pergunta;
 	private String alternativa;
 	private int resultado;
 	private LocalDate data;
 	
 	public int getId() {
-		return id;
+		return this.id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getPergunta() {
-		return pergunta;
+	public Pergunta getPergunta() {
+		return this.pergunta;
 	}
-	public void setPergunta(String pergunta) {
+
+	public void setPergunta(Pergunta pergunta) {
 		this.pergunta = pergunta;
 	}
+
 	public String getAlternativa() {
-		return alternativa;
+		return this.alternativa;
 	}
 	public void setAlternativa(String alternativa) {
 		this.alternativa = alternativa;
 	}
 	public int getResultado() {
-		return resultado;
+		return this.resultado;
 	}
 	public void setResultado(int resultado) {
 		this.resultado = resultado;
 	}
 	public LocalDate getData() {
-		return data;
+		return this.data;
 	}
 	public void setData(LocalDate data) {
 		this.data = data;
 	}
-	
-	
+
+
 }
