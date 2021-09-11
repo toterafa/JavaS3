@@ -1,7 +1,5 @@
 package br.com.fiap.model;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.Calendar;
@@ -11,6 +9,8 @@ public class Usuario {
 	private String nome;
 	private LocalDate dataDeNascimento;
 	private String genero;
+	private String estadoUf;
+	private String estadoCivil;
 	private String email;
 	private String senha;
 
@@ -31,6 +31,14 @@ public class Usuario {
 		return genero;
 	}
 
+	public  String getEstadoUf() {return estadoUf;}
+
+	public String getEstadoCivil(){return estadoCivil;}
+
+	public String getEmail() {
+		return email;
+	}
+
 	public String getSenha() {
 		return senha;
 	}
@@ -45,16 +53,12 @@ public class Usuario {
 		this.nome = nome;
 	}
 
-	public void setDataDeNascimento(@NotNull LocalDate dataDeNascimento) {
+	public void setDataDeNascimento(LocalDate dataDeNascimento) {
 		int anoAtual = Calendar.getInstance().get(Calendar.YEAR);
 		int mesAtual = Calendar.getInstance().get(Calendar.MONTH);
 		int diaAtual = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
-		int anoDeNascimento = dataDeNascimento.getYear();
-		int mesDeNascimento = dataDeNascimento.getMonthValue();
-		int diaDeNascimento = dataDeNascimento.getDayOfMonth();
 
 		LocalDate dataAtual = LocalDate.of(anoAtual, mesAtual, diaAtual);
-		LocalDate data = LocalDate.of(anoDeNascimento, mesDeNascimento, diaDeNascimento);
 
 		int idade = Period.between(dataDeNascimento, dataAtual).getYears();
 
@@ -64,7 +68,6 @@ public class Usuario {
 			System.out.println("Idade inválida");
 		}else if(idade >= 15 || idade <= 99){
 			this.dataDeNascimento = dataDeNascimento;
-			System.out.println("Você tem " + idade + " anos");
 		}else {
 			System.out.println("ERRO");
 		}
@@ -74,10 +77,6 @@ public class Usuario {
 		this.genero = genero;
 	}
 
-	public String getEmail() {
-		return email;
-	}
-
 	public void setEmail(String email) {
 		this.email = email;
 	}
@@ -85,5 +84,8 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	
+
+	public void setEstadoUf(String estadoUf){this.estadoUf = estadoUf;}
+
+	public void setEstadoCivil(String estadoCivil) {this.estadoCivil = estadoCivil;}
 }
