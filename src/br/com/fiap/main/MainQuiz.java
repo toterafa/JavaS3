@@ -1,6 +1,8 @@
 package br.com.fiap.main;
 
 import java.time.LocalDate;
+
+import br.com.fiap.model.Pergunta;
 import br.com.fiap.model.Quiz;
 import br.com.fiap.model.Usuario;
 
@@ -8,10 +10,12 @@ public class MainQuiz {
 
 	public static void main(String[] args) {
 		
-		
+		Pergunta p1 = new Pergunta();
+		p1.setTexto("Como foi o seu dia hoje?");
+
 		Quiz q1 = new Quiz();
 		q1.setId(321);
-		q1.setPergunta("Hoje seu dia foi bom?");
+		q1.setPergunta(p1);
 		q1.setAlternativa("a");
 		q1.setResultado(3);
 		q1.setData(LocalDate.of(2021, 05, 23));
@@ -25,7 +29,7 @@ public class MainQuiz {
 		u2.setSenha("123");
 		
 		System.out.println(q1.getId());
-		System.out.println(q1.getPergunta());
+		System.out.println(q1.getPergunta().getTexto());
 		System.out.println(q1.getAlternativa());
 		System.out.println("Seu nível de ansiedade" + q1.getResultado());
 		System.out.println(q1.getData());
