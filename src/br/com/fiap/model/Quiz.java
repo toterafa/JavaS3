@@ -6,7 +6,7 @@ public class Quiz {
 	
 	private int id;
 	private Pergunta pergunta;
-	private String alternativa;
+	private Resposta alternativa;
 	private int resultado;
 	private LocalDate data;
 	
@@ -24,12 +24,15 @@ public class Quiz {
 		this.pergunta = pergunta;
 	}
 
-	public String getAlternativa() {
+
+	public Resposta getAlternativa() {
 		return this.alternativa;
 	}
-	public void setAlternativa(String alternativa) {
+	public void setAlternativa(Resposta alternativa) {
 		this.alternativa = alternativa;
 	}
+
+
 	public int getResultado() {
 		return this.resultado;
 	}
