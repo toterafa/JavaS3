@@ -28,7 +28,6 @@ public class MainUsuario {
 		System.out.println(u1.getEmail());
 		System.out.println(u1.getSenha());
 
-
 	}
 
 }
