@@ -62,11 +62,11 @@ public class Usuario {
 
 		int idade = Period.between(dataDeNascimento, dataAtual).getYears();
 
-		if(idade <= 14){
+		if(idade <= 4){
 			System.out.println("Você ainda não atingiu a idade do nosso público alvo");
 		}else if(idade >= 100){
 			System.out.println("Idade inválida");
-		}else if(idade >= 15 || idade <= 99){
+		}else if(idade >= 5 || idade <= 99){
 			this.dataDeNascimento = dataDeNascimento;
 		}else {
 			System.out.println("ERRO");
